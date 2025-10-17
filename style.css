@@ -102,6 +102,7 @@ h2 {
 .hobbies {
   display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 
 h3 {
@@ -135,5 +136,11 @@ h3 {
   .info-section {
     flex: 2;
     padding: 40px;
+  }
+}
+
+@media (min-width: 568px) {
+  .hobbies {
+    flex-direction: row;
   }
 }
