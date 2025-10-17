@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <article data-testid="test-profile-card" class="profile-card">
+        <figure class="avatar-section">
+          <img
+            src="munachi.jpg"
+            alt="User avatar"
+            data-testid="test-user-avatar"
+            class="avatar"
+          />
+        </figure>
+
+        <div class="info-section">
+          <header>
+            <h2 data-testid="test-user-name">Munachi Onyebuchi</h2>
+          </header>
+
+          <p data-testid="test-user-bio" class="user-bio">
+            Frontend developer with 2 years of experience in React.js and
+            TailwindCSS, passionate about crafting interactive web experiences
+            with clean, modern interfaces.
+          </p>
+
+          <p class="user-time">
+            Current Time (ms):
+            <span data-testid="test-user-time" id="user-time"></span>
+          </p>
+
+          <nav aria-label="Social Links">
+            <ul data-testid="test-user-social-links" class="social-links">
+              <li>
+                <a
+                  href="https://x.com/munaweb3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/munachi821"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/munachi-onyebuchi-90b6a12a8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="hobbies">
+            <div aria-label="Hobbies">
+              <h3>Hobbies</h3>
+              <ul data-testid="test-user-hobbies" class="list">
+                <li>Building projects</li>
+                <li>Gaming</li>
+                <li>Watching anime</li>
+                <li>Learning new languages</li>
+              </ul>
+            </div>
+
+            <div aria-label="Dislikes">
+              <h3>Dislikes</h3>
+              <ul data-testid="test-user-dislikes" class="list">
+                <li>Messy code</li>
+                <li>Unreliable internet</li>
+                <li>Procrastination</li>
+                <li>Wordpress</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
